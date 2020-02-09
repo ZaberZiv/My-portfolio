@@ -1,0 +1,80 @@
+.promo 
+    min-height: 661px;
+    background: url(../img/bg_main.png) center center/cover no-repeat
+    padding-top: 39px
+    &_navigation
+        display: flex
+        flex-direction: row
+        a
+            img
+                width: 140px
+                height: 65px
+    &_menu
+        width: 540px
+        list-style: none
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-left: 460px
+        padding: 0
+        a
+            text-decoration: none
+            color: #ffffff
+            font-size: 13px
+            font-weight: 700
+            text-transform: uppercase
+            &:hover
+                border-bottom: 1px solid #ffffff
+
+.manage
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 19px
+    &_phone
+        position: relative
+        width: 420px
+        height: 569px
+        img
+            margin-top: 5px
+            height: 569px
+    &_img1
+        position: absolute
+        top: 0
+        right: 0
+        transition: 1.5s all
+        &:hover
+            right: -40px
+    &_img2
+        position: absolute
+        top: 62px
+        right: 114px
+        transition: 1s all
+        img
+            margin-top: 12px
+            height: 500px
+        &:hover
+            right: 164px
+            
+    &_item
+        width: 550px
+        display: flex
+        flex-direction: column
+        margin-top: 106px
+    &_header
+        h1
+            color: #ffffff
+            font-size: 42px
+            font-weight: 700
+            line-height: 48px
+    &_subheader
+        margin: 27px 0 39px 0
+        h2
+            color: #ffffff
+            font-size: 24px
+            font-weight: 300
+            line-height: 30px
+        span
+            font-weight: 400

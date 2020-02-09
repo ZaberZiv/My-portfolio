@@ -1,0 +1,42 @@
+.data
+    position: relative
+    min-height: 580px
+    display: flex
+    flex-direction: row
+    background: url(../img/data_bg.png) center center/cover no-repeat
+    h2
+        position: absolute
+        top: 79px
+        left: 50%
+        transform: translateX(-50%)
+        text-align: center
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+    &_left
+        width: 50%
+        text-align: right
+        margin-right: 82px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+    &_right
+        width: 50%
+        text-align: left
+        margin-left: 82px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+    &_header
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 50px
+    &_descr
+        color: #ffffff
+        font-size: 18px
+        font-weight: 300
+        margin-top: 20px
