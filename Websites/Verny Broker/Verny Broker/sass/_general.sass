@@ -1,0 +1,485 @@
+.header
+    img
+        width: 380px
+        height: 140px
+    &_position
+        text-align: center
+
+.navigation
+    display: flex
+    flex-direction: row
+
+.humburger
+    display: none
+
+nav 
+    height: 80px
+    background-color: $second_color
+    border: 1px solid $text_grey
+    border-right: none
+    border-left: none
+    
+.fixed_nav
+    position: fixed
+    width: 100%
+    left: 0
+    index: 999
+    transition: 0.5s all
+    height: 60px
+    top: -25px
+
+.menu
+    display: flex
+    justify-content: space-around
+    margin-left: 90px
+    list-style-type: none
+    padding: 30px 0
+    &_item
+        border-right: 1px solid black
+        padding-right: 30px
+        &:last-child
+            border-right: none
+    &_link
+        color: $text_black
+        font-size: 14px
+        font-weight: 400px
+        text-transform: uppercase 
+        +link_hover
+.active
+    text-decoration: none
+    color: $text_white
+    border-bottom: 2px solid coral
+    cursor: pointer
+
+.language
+    align-self: center
+    margin-right: 15px
+    a
+        text-decoration: none
+        color: $text_white
+        &:hover
+            color: $hover_color
+            transition: 0.3s all
+
+.mobile_language
+    display: none
+
+.fixed_lang
+    margin: 25px 15px 0 0
+
+.first
+    background: url('../img/main/insurance.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+    &_text
+        h1
+            text-transform: uppercase
+            font-size: 60px
+            color: $text_white
+            font-weight: 700
+            margin: 0
+            text-align: center
+        h2 
+            text-transform: uppercase
+            font-size: 36px
+            color: $text_white
+            font-weight: 700
+            margin: 0
+            text-align: center
+            padding-bottom: 20px 
+    &_block
+        min-height: 220px
+
+.wrapper
+    min-height: 700px 
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+.divider
+    width: 120px
+    height: 7px
+    background-color: $brand_color
+    margin: 0 auto
+
+.divider_dark
+    background-color: $text_grey
+
+.block
+    background-color: rgba(0,0,0, .3)
+
+.reinsurance
+    &_wrapper
+        min-height: 500px
+        display: flex
+        justify-content: center
+    &_left
+        width: 50%
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+        text-align: right
+        background-color: $second_color
+    &_textl
+        color: $brand_color
+        margin: 150px
+        text-transform: uppercase 
+        text-align: justify
+        +text_style
+    &_right 
+        width: 50%
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        background-color: $brand_color
+    &_textr
+        color: $second_color
+        margin: 150px
+        text-transform: uppercase 
+        text-align: justify
+        +text_style
+    h2
+        font-size: 50px
+        font-weight: 700
+        line-height: 50px
+        text-align: center
+
+.goals
+    min-height: 300px
+    margin: 60px 0 
+    &_header
+        text-align: center
+        h2
+            font-size: 60px
+            font-weight: 700
+            line-height: 80px
+            color: $text_grey
+            text-transform: uppercase 
+    &_descr
+        font-size: 30px
+        font-weight: 500
+        line-height: 100px
+        color: $text_grey
+        text-transform: uppercase 
+    &_img
+        display: flex
+        justify-content: center
+        align-items: center
+    &_text
+        margin-top: 50px
+        font-size: 30px
+        font-weight: 400
+        color: $text_grey
+        text-align: center
+
+.partners
+    min-height: 300px
+    background-color: $brand_color
+    &_wrapper
+        width: 100%
+        min-height: 300px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &_header
+        font-size: 30px
+        font-weight: 500
+        line-height: 100px
+        color: $second_color
+        text-transform: uppercase
+        margin-bottom: 50px
+.btn
+    color: $text_white
+    width: 200px
+    height: 50px
+    text-transform: uppercase
+    background-color: $second_color
+    text-align: center
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: 3px solid rgba(0, 0, 0, 0.07)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    border: none
+    cursor: pointer
+    +text_style
+    +btn_hover
+
+.almaty
+    min-height: 600px 
+    background: url('../img/main/almaty.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.footer
+    &_wrapper
+        display: flex 
+        justify-content: space-between
+        align-items: flex-start
+        padding: 20px
+    &_contacts
+        min-height: 300px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        img
+            width: 50px
+            height: 50px
+
+.box
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+.icons
+    margin: 20px
+.text
+    text-align: left
+    padding-top: 30px
+    +text_style
+    br
+        display: none
+    a   
+        text-decoration: none
+        color: $text_black
+
+/* СТРАНИЦА О НАС*/  
+
+.first_about
+    background: url('../img/team/team.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+    &_text
+        h1
+            text-transform: uppercase
+            font-size: 80px
+            color: $text_white
+            font-weight: 900
+            margin: 0
+            text-align: center  
+
+.managment
+    min-height: 400px //800px
+    h2
+        font-size: 60px
+        font-weight: 700
+        line-height: 100px
+        color: $text_grey
+        text-transform: uppercase
+        margin: 60px 0
+        text-align: center
+    &_wrapper
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        img
+            width: 300px
+            height: 400px
+    &_text
+        color: $text_grey
+        text-transform: uppercase
+        margin: 30px 0
+        text-align: center
+        +text_style
+        font-size: 20px //убрать когда будут фото
+        font-weight: 500 //убрать когда будут фото
+        span
+            font-size: 15px // 10px
+            font-weight: 400 // 300
+    &_descr
+        color: $text_grey
+        margin: 30px 0
+        text-align: justify
+        +text_style
+    &_afk
+        color: $text_grey
+        margin: 30px 0
+        +text_style
+
+.insurance
+    background-color: $brand_color
+    min-height: 650px
+    h2
+        font-size: 60px
+        font-weight: 700
+        color: $text_grey
+        text-transform: uppercase
+        padding: 60px 0 30px 0
+        text-align: center
+    &_text
+        color: $text_grey
+        border: 4px solid #ffffff
+        padding: 20px
+        padding-bottom: 0 
+        text-align: justify
+        +text_style
+
+/*СТРАНИЦА УСЛУГИ*/
+
+.first_service
+    background: url('../img/service/main.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.service
+    min-height: 400px
+    margin: 40px 0
+    
+.texttype
+    position: static
+    margin: 0 auto
+    padding: 40px 0
+    max-width: 950px
+    color: $text_grey
+    text-align: justify
+    +text_style
+
+.underlined
+    position: static
+    padding: 5px 15px
+    border-block-end: 1px solid $text_grey
+    color: $text_grey
+    text-align: justify
+    +text_style
+    &:nth-child(5)
+        border-block-end: none
+    &:nth-child(6)
+        border-block-end: none
+
+.footer_about
+    min-height: 340px
+    background-color: $text_white
+
+/*СТРАНИЦА ФИНАНСОВАЯ ОТЧЕТНОСТЬ*/
+
+.first_financial
+    background: url('../img/financial/main.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.financial
+    min-height: 400px
+    &_text
+        font-size: 60px
+        font-weight: 700
+        color: $text_grey
+        text-transform: uppercase
+        margin: 60px 0 15px 0
+        text-align: center
+    &_links
+        position: static
+        max-width: 450px
+        margin: 0 auto
+        margin-top: 30px
+        a
+            display: block
+            text-align: center
+            padding: 15px 0
+            text-decoration: none
+            text-transform: uppercase
+            color: $text_grey
+            border-block-end: 1px solid $text_grey
+            +text_style
+            &:hover
+                color: $hover_color
+                
+/*СТРАНИЦА ПАРТНЕРЫ*/
+
+.first_partner
+    background: url('../img/partners/partners.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.partner
+    min-height: 400px
+    margin: 40px 0
+    &_nineteen
+        border-block-end: none
+    &_line
+        border-block-end: 1px solid $second_color
+
+.new_underlined
+    position: static
+    color: $text_grey
+    +text_style
+    ul
+        list-style-type: none
+               
+/*СТРАНИЦА ЛИЦЕНЗИЯ*/
+
+.licence
+    background: url('../img/licence/licence3.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.licence_download
+    min-height: 400px
+    text-align: center
+    &_wrapper
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        img
+            width: 300px
+            height: 400px
+    &_text
+        color: $text_grey
+        text-transform: uppercase
+        margin: 30px 0
+        text-align: center
+        +text_style
+        font-size: 20px //убрать когда будут фото
+        font-weight: 500 //убрать когда будут фото
+    &_descr
+        color: $text_grey
+        margin: 30px 0
+        text-align: justify
+        +text_style
+    a
+        text-decoration: none
+        color: $text_grey
+        &:hover
+            color: $hover_color
+            cursor: pointer
+
+.managment_licence
+    font-size: 30px
+    font-weight: 500
+    line-height: 50px
+    color: $text_grey
+    text-transform: uppercase
+    margin: 60px 0
+    text-align: center
+
+.licence_download
+
+.linetop
+    border-top: 1px solid $second_color
+
+/*СТРАНИЦА КОНТАКТЫ*/
+
+.contact
+    background: url('../img/contacts/mail.jpg') center (center / cover) no-repeat
+    background-attachment: fixed
+
+.team
+    min-height: 500px
+    background-color: $text_white
+    margin: 50px 0
+    &_box
+        margin-bottom: 50px
+        color: $text_grey
+        +text_style
+    &_position
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 700
+    &_name
+        padding: 8px 0
+    &_contact
+        a
+            text-decoration: none
+            color: $text_grey
+            
+.position
+    position: static
+
+.icons_contact
+    margin: 10px
+
+.address
+    padding-top: 15px
